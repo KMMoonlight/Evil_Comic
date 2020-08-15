@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    android:layout_width="120dp"
+    android:layout_height="180dp">
+
+    <LinearLayout
+        android:id="@+id/ll_comic"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_comic_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:id="@+id/tv_comic_title"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#252525"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_comic_info"
+            android:textColor="#999999"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
